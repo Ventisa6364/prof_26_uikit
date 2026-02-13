@@ -97,8 +97,8 @@ class CustomIcons {
     fontPackage: iconFontPackage,
   );
 
-  // assets/Icons/Login.svg
-  static const IconData Login = IconData(
+  // assets/Icons/login.svg
+  static const IconData login = IconData(
     0xe00c,
     fontFamily: iconFontFamily,
     fontPackage: iconFontPackage,

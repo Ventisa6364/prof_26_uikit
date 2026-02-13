@@ -1,4 +1,5 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
 import 'palette.dart';
 
 class Style {
@@ -6,5 +7,7 @@ class Style {
 
   Style({required this.palette});
 
-  TextStyle get defaultStyle => TextStyle(color: palette.text);
+  TextStyle get text => TextStyle(color: palette.text);
+
+  TextStyle get textSecondary => TextStyle(color: palette.textSecondary);
 }

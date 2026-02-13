@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 abstract class Palette {
   abstract final Color background;
-  abstract final Color block;
   abstract final Color black;
+  abstract final Color block;
   abstract final Color border;
   abstract final Color button;
   abstract final Color buttonInactive;
@@ -15,81 +15,102 @@ abstract class Palette {
   abstract final Color error;
 }
 
-class DarkPalette extends Palette {
+class LightPalette extends Palette {
   @override
-  Color get accent => .new(0xFF7193F0);
+  // TODO: implement accent
+  Color get accent => .new(0x4A77D9);
 
   @override
-  Color get background => .new(0xFF121318);
+  // TODO: implement background
+  Color get background => .new(0xF9F6EC);
 
   @override
-  Color get black => .new(0xFF000000);
+  // TODO: implement black
+  Color get black => .new(0xF9F6EC);
 
   @override
-  Color get block => .new(0xFF2A2E38);
+  // TODO: implement block
+  Color get block => .new(0xF9F6EC);
 
   @override
-  Color get border => .new(0xFF3A3F4C);
+  // TODO: implement border
+  Color get border => .new(0xCBB89F);
 
   @override
-  Color get button => .new(0xFFDE7C3E);
+  // TODO: implement button
+  Color get button => .new(0xFF9C5A);
 
   @override
-  Color get buttonInactive => .new(0xFFCD7B45);
+  // TODO: implement buttonInactive
+  Color get buttonInactive => .new(0xCD7B45);
 
   @override
-  Color get error => .new(0xFFF27872);
+  // TODO: implement error
+  Color get error => .new(0xE06355);
 
   @override
-  Color get hint => .new(0xFF7E8491);
+  // TODO: implement hint
+  Color get hint => .new(0xB1A79C);
 
   @override
-  Color get icon => .new(0xFFF6F7FB);
+  // TODO: implement icon
+  Color get icon => .new(0x23201C);
 
   @override
-  Color get text => .new(0xFFC8CDDE);
+  // TODO: implement text
+  Color get text => .new(0x433E36);
 
   @override
-  Color get textSecondary => .new(0xFFB4BAC6);
+  // TODO: implement textSecondary
+  Color get textSecondary => .new(0x7A726A);
 }
 
-
-class LightPalette extends Palette {
+class DarkPalette extends Palette {
+  @override
+  // TODO: implement accent
+  Color get accent => .new(0x7193F0);
 
   @override
-  Color get accent => .new(0xff4A77D9);
+  // TODO: implement background
+  Color get background => .new(0x121318);
 
   @override
-  Color get background => .new(0xffF9F6EC);
+  // TODO: implement black
+  Color get black => .new(0x000000);
 
   @override
-  Color get black => .new(0xffFFFFFF);
+  // TODO: implement block
+  Color get block => .new(0x2A2E38);
 
   @override
-  Color get block => .new(0xffFFEFD9);
+  // TODO: implement border
+  Color get border => .new(0x3A3F4C);
 
   @override
-  Color get border => .new(0xffCBB89F);
+  // TODO: implement button
+  Color get button => .new(0xDE7C3E);
 
   @override
-  Color get button => .new(0xffFF9C5A);
+  // TODO: implement buttonInactive
+  Color get buttonInactive => .new(0xA55C2E);
 
   @override
-  Color get buttonInactive => .new(0xffCD7B45);
+  // TODO: implement error
+  Color get error => .new(0xF27872);
 
   @override
-  Color get error => .new(0xffE06355);
+  // TODO: implement hint
+  Color get hint => .new(0x7E8491);
 
   @override
-  Color get hint => .new(0xffB1A79C);
+  // TODO: implement icon
+  Color get icon => .new(0xF6F7FB);
 
   @override
-  Color get icon => .new(0xff23201C);
+  // TODO: implement text
+  Color get text => .new(0xC8CDDE);
 
   @override
-  Color get text => .new(0xff433E36);
-
-  @override
-  Color get textSecondary => .new(0xff7A726A);
-
+  // TODO: implement textSecondary
+  Color get textSecondary => .new(0xB4BAC6);
 }
