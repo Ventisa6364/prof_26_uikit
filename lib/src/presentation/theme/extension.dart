@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uikit_12_02_26/uikit_12_02_26.dart';
+import 'palette.dart';
+import 'style.dart';
 
 class CustomTheme extends ThemeExtension<CustomTheme> {
   final Palette palette;
