@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:uikit_12_02_26/uikit_12_02_26.dart';
+import 'palette.dart';
 
 class Style {
   final Palette palette;
