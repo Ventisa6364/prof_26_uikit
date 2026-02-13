@@ -18,99 +18,99 @@ abstract class Palette {
 class LightPalette extends Palette {
   @override
   // TODO: implement accent
-  Color get accent => .new(0x4A77D9);
+  Color get accent => .new(0xFF4A77D9);
 
   @override
   // TODO: implement background
-  Color get background => .new(0xF9F6EC);
+  Color get background => .new(0xFFF9F6EC);
 
   @override
   // TODO: implement black
-  Color get black => .new(0xF9F6EC);
+  Color get black => .new(0xFFFFFFFF);
 
   @override
   // TODO: implement block
-  Color get block => .new(0xF9F6EC);
+  Color get block => .new(0xFFFFEFD9);
 
   @override
   // TODO: implement border
-  Color get border => .new(0xCBB89F);
+  Color get border => .new(0xFFCBB89F);
 
   @override
   // TODO: implement button
-  Color get button => .new(0xFF9C5A);
+  Color get button => .new(0xFFFF9C5A);
 
   @override
   // TODO: implement buttonInactive
-  Color get buttonInactive => .new(0xCD7B45);
+  Color get buttonInactive => .new(0xFFCD7B45);
 
   @override
   // TODO: implement error
-  Color get error => .new(0xE06355);
+  Color get error => .new(0xFFE06355);
 
   @override
   // TODO: implement hint
-  Color get hint => .new(0xB1A79C);
+  Color get hint => .new(0xFFB1A79C);
 
   @override
   // TODO: implement icon
-  Color get icon => .new(0x23201C);
+  Color get icon => .new(0xFF23201C);
 
   @override
   // TODO: implement text
-  Color get text => .new(0x433E36);
+  Color get text => .new(0xFF433E36);
 
   @override
   // TODO: implement textSecondary
-  Color get textSecondary => .new(0x7A726A);
+  Color get textSecondary => .new(0xFF7A726A);
 }
 
 class DarkPalette extends Palette {
   @override
   // TODO: implement accent
-  Color get accent => .new(0x7193F0);
+  Color get accent => .new(0xFF7193F0);
 
   @override
   // TODO: implement background
-  Color get background => .new(0x121318);
+  Color get background => .new(0xFF121318);
 
   @override
   // TODO: implement black
-  Color get black => .new(0x000000);
+  Color get black => .new(0xFF000000);
 
   @override
   // TODO: implement block
-  Color get block => .new(0x2A2E38);
+  Color get block => .new(0xFF2A2E38);
 
   @override
   // TODO: implement border
-  Color get border => .new(0x3A3F4C);
+  Color get border => .new(0xFF3A3F4C);
 
   @override
   // TODO: implement button
-  Color get button => .new(0xDE7C3E);
+  Color get button => .new(0xFFDE7C3E);
 
   @override
   // TODO: implement buttonInactive
-  Color get buttonInactive => .new(0xA55C2E);
+  Color get buttonInactive => .new(0xFFA55C2E);
 
   @override
   // TODO: implement error
-  Color get error => .new(0xF27872);
+  Color get error => .new(0xFFF27872);
 
   @override
   // TODO: implement hint
-  Color get hint => .new(0x7E8491);
+  Color get hint => .new(0xFF7E8491);
 
   @override
   // TODO: implement icon
-  Color get icon => .new(0xF6F7FB);
+  Color get icon => .new(0xFFF6F7FB);
 
   @override
   // TODO: implement text
-  Color get text => .new(0xC8CDDE);
+  Color get text => .new(0xFFC8CDDE);
 
   @override
   // TODO: implement textSecondary
-  Color get textSecondary => .new(0xB4BAC6);
+  Color get textSecondary => .new(0xFFB4BAC6);
 }
