@@ -6,5 +6,7 @@ class Style {
 
   Style({required this.palette});
 
-  TextStyle get defaultStyle => TextStyle(color: palette.text);
+  TextStyle get text => TextStyle(color: palette.text);
+
+  TextStyle get textSecondary => TextStyle(color: palette.textSecondary);
 }
