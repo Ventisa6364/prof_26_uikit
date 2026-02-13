@@ -52,3 +52,44 @@ class DarkPalette extends Palette {
   @override
   Color get textSecondary => .new(0xFFB4BAC6);
 }
+
+
+class LightPalette extends Palette {
+
+  @override
+  Color get accent => .new(0xff4A77D9);
+
+  @override
+  Color get background => .new(0xffF9F6EC);
+
+  @override
+  Color get black => .new(0xffFFFFFF);
+
+  @override
+  Color get block => .new(0xffFFEFD9);
+
+  @override
+  Color get border => .new(0xffCBB89F);
+
+  @override
+  Color get button => .new(0xffFF9C5A);
+
+  @override
+  Color get buttonInactive => .new(0xffCD7B45);
+
+  @override
+  Color get error => .new(0xffE06355);
+
+  @override
+  Color get hint => .new(0xffB1A79C);
+
+  @override
+  Color get icon => .new(0xff23201C);
+
+  @override
+  Color get text => .new(0xff433E36);
+
+  @override
+  Color get textSecondary => .new(0xff7A726A);
+
+}
