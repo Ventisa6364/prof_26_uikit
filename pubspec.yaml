@@ -1,4 +1,4 @@
-name: need
+name: prof26_uikit
 description: "A new Flutter package project."
 version: 0.0.1
 homepage:
@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  storybook_flutter: ^0.14.1
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:

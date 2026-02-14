@@ -1,13 +1,15 @@
 {
   "roots": [
-    "need"
+    "prof26_uikit"
   ],
   "packages": [
     {
-      "name": "need",
+      "name": "prof26_uikit",
       "version": "0.0.1",
       "dependencies": [
-        "flutter"
+        "flutter",
+        "flutter_screenutil",
+        "storybook_flutter"
       ],
       "devDependencies": [
         "flutter_lints",
@@ -37,6 +39,26 @@
         "stream_channel",
         "test_api",
         "vector_math"
+      ]
+    },
+    {
+      "name": "flutter_screenutil",
+      "version": "5.9.3",
+      "dependencies": [
+        "flutter"
+      ]
+    },
+    {
+      "name": "storybook_flutter",
+      "version": "0.14.1",
+      "dependencies": [
+        "collection",
+        "device_frame",
+        "flutter",
+        "nested",
+        "pointer_interceptor",
+        "provider",
+        "recase"
       ]
     },
     {
@@ -136,6 +158,13 @@
       "dependencies": []
     },
     {
+      "name": "nested",
+      "version": "1.0.0",
+      "dependencies": [
+        "flutter"
+      ]
+    },
+    {
       "name": "sky_engine",
       "version": "0.0.0",
       "dependencies": []
@@ -155,6 +184,11 @@
     {
       "name": "lints",
       "version": "6.1.0",
+      "dependencies": []
+    },
+    {
+      "name": "recase",
+      "version": "4.1.0",
       "dependencies": []
     },
     {
@@ -191,10 +225,34 @@
       ]
     },
     {
+      "name": "device_frame",
+      "version": "1.4.0",
+      "dependencies": [
+        "flutter",
+        "freezed_annotation"
+      ]
+    },
+    {
+      "name": "freezed_annotation",
+      "version": "3.1.0",
+      "dependencies": [
+        "collection",
+        "json_annotation",
+        "meta"
+      ]
+    },
+    {
       "name": "async",
       "version": "2.13.0",
       "dependencies": [
         "collection",
+        "meta"
+      ]
+    },
+    {
+      "name": "json_annotation",
+      "version": "4.10.0",
+      "dependencies": [
         "meta"
       ]
     },
@@ -206,12 +264,28 @@
       ]
     },
     {
+      "name": "pointer_interceptor",
+      "version": "0.9.3+7",
+      "dependencies": [
+        "flutter"
+      ]
+    },
+    {
       "name": "source_span",
       "version": "1.10.2",
       "dependencies": [
         "collection",
         "path",
         "term_glyph"
+      ]
+    },
+    {
+      "name": "provider",
+      "version": "6.1.5+1",
+      "dependencies": [
+        "collection",
+        "flutter",
+        "nested"
       ]
     },
     {
