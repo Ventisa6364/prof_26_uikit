@@ -84,7 +84,7 @@ class BigButtonWidget extends BaseButtonWidget {
   );
 
   @override
-  double get width => 335.w;
+  double get width => 33.w;
 
   BigButtonWidget.filled({
     super.key,
