@@ -14,6 +14,7 @@ class TestButton extends StatelessWidget {
       onPressed: () {
         debugPrint('TestButton was pressed');
       },
+      style: FilledButton.styleFrom(backgroundColor: theme.palette.button),
       child: Text(text, style: theme.styles.text),
     );
   }
