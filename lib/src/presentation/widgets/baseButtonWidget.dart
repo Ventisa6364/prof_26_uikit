@@ -47,8 +47,8 @@ abstract class BaseButtonWidget extends StatelessWidget {
           backgroundColor: backgroundColor,
           disabledBackgroundColor: disabledBackgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            side: BorderSide(width: 1, color: strokeColor),
+            borderRadius: BorderRadius.circular(10.r),
+            side: BorderSide(width: 1.r, color: strokeColor),
           ),
         ),
         child: Text(text, style: textStyle.copyWith(color: theme.palette.text)),
@@ -70,7 +70,7 @@ class BigButtonWidget extends BaseButtonWidget {
   });
 
   @override
-  double get height => 56;
+  double get height => 56.h;
 
   @override
   EdgeInsets get padding => EdgeInsets.all(16.r);
@@ -78,13 +78,13 @@ class BigButtonWidget extends BaseButtonWidget {
   @override
   TextStyle get textStyle => TextStyle(
     fontWeight: FontWeight.w500,
-    fontSize: 18,
+    fontSize: 18.sp,
     height: 24 / 18,
     letterSpacing: 0,
   );
 
   @override
-  double get width => 335;
+  double get width => 335.w;
 
   BigButtonWidget.filled({
     super.key,
