@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prof26_uikit/uikit_13-02-26.dart';
+import 'package:prof26_uikit/uikit.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
 
 class TestButton extends StatelessWidget {

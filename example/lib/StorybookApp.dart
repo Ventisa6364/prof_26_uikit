@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
-import 'package:prof26_uikit/uikit_13-02-26.dart';
+import 'package:prof26_uikit/uikit.dart';
 
 class StorybookApp extends StatelessWidget {
   const StorybookApp({super.key});
@@ -11,7 +11,7 @@ class StorybookApp extends StatelessWidget {
       wrapperBuilder: (BuildContext context, Widget? widget) {
         return MaterialAppWrapper(widget: widget);
       },
-      stories: [TestButton.story],
+      stories: [TestButton.story, BigButtonWidget.story],
     );
   }
 }
