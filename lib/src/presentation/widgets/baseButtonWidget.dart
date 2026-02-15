@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:prof26_uikit/src/presentation/theme/extension.dart';
+import 'package:prof26_uikit/uikit_14-02-26.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
 
 abstract class BaseButtonWidget extends StatelessWidget {
@@ -51,7 +51,7 @@ abstract class BaseButtonWidget extends StatelessWidget {
             side: BorderSide(width: 1.r, color: strokeColor),
           ),
         ),
-        child: Text(text, style: textStyle.copyWith(color: theme.palette.text)),
+        child: Text(text, style: textStyle.copyWith(color: textColor)),
       ),
     );
   }
@@ -76,12 +76,7 @@ class BigButtonWidget extends BaseButtonWidget {
   EdgeInsets get padding => EdgeInsets.all(16.r);
 
   @override
-  TextStyle get textStyle => TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 18.sp,
-    height: 24 / 18,
-    letterSpacing: 0,
-  );
+  TextStyle get textStyle => theme.style.nunitoMedium18;
 
   @override
   double get width => 335.w;

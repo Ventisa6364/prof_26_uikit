@@ -1,6 +1,4 @@
-import 'dart:ui';
-
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter/material.dart';
 import 'package:prof26_uikit/uikit_14-02-26.dart';
 
 class Style {
@@ -14,7 +12,7 @@ class Style {
 
   TextStyle get nunitoMedium18 => TextStyle(
     fontWeight: FontWeight.w500,
-    fontSize: 18.sp,
+    fontSize: 18,
     height: 24/18,
     letterSpacing: 0
   );
