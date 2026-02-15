@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a060439b-5ea7-42ed-b353-3d57e81da68f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/StorybookApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/StorybookApp.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/presentation/theme/extension.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/theme/extension.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/presentation/theme/styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/theme/styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/presentation/widgets/TestButton.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/widgets/TestButton.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/presentation/widgets/baseButtonWidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/widgets/baseButtonWidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/presentation/widgets/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/widgets/utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/uikit_13-02-26.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/uikit.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sprint/13-02-26-2" />
+        <entry key="$PROJECT_DIR$" value="14-02-26/uikit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,10 +65,12 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;14-02-26/uikit&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint/14-02-26&quot;,
     &quot;io.flutter.project.isFirstOpen&quot;: &quot;true&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
