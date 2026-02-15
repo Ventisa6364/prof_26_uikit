@@ -11,6 +11,7 @@ abstract class BaseButtonWidget extends StatelessWidget {
   final Color strokeColor;
   final Color textColor;
   final String text;
+  final double radius;
 
   const BaseButtonWidget({
     super.key,
@@ -21,6 +22,7 @@ abstract class BaseButtonWidget extends StatelessWidget {
     required this.strokeColor,
     required this.textColor,
     required this.text,
+    required this.radius,
   });
 
   @protected
@@ -46,7 +48,7 @@ abstract class BaseButtonWidget extends StatelessWidget {
           backgroundColor: backgroundColor,
           disabledBackgroundColor: disabledBackgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.r),
+            borderRadius: BorderRadius.circular(radius),
             side: BorderSide(width: 1.r, color: strokeColor),
           ),
         ),
@@ -63,6 +65,7 @@ abstract class BaseButtonWidget extends StatelessWidget {
   }
 }
 
+
 class BigButtonWidget extends BaseButtonWidget {
   const BigButtonWidget({
     super.key,
@@ -73,23 +76,24 @@ class BigButtonWidget extends BaseButtonWidget {
     required super.textColor,
     required super.text,
     required super.disabledBackgroundColor,
+    required super.radius,
   });
 
   @override
   // TODO: implement height
-  double get height => 56.h;
+  double get height => 48.h;
 
   @override
   // TODO: implement padding
-  EdgeInsets get padding => EdgeInsets.all(16.r);
+  EdgeInsets get padding => EdgeInsets.all(13.r);
 
   @override
   // TODO: implement textStyle
-  TextStyle get textStyle => theme.styles.nunitoMedium18;
+  TextStyle get textStyle => theme.styles.nunitoMedium16;
 
   @override
   // TODO: implement width
-  double? get width => 335.w;
+  double? get width => 336.w;
 
   BigButtonWidget.filled({
     super.key,
@@ -101,6 +105,7 @@ class BigButtonWidget extends BaseButtonWidget {
          disabledBackgroundColor: theme.palette.buttonInactive,
          strokeColor: Colors.transparent,
          textColor: theme.palette.text,
+         radius: 10.r,
        );
 
   BigButtonWidget.error({
@@ -113,6 +118,7 @@ class BigButtonWidget extends BaseButtonWidget {
          disabledBackgroundColor: theme.palette.block,
          strokeColor: Colors.transparent,
          textColor: theme.palette.error,
+         radius: 10.r,
        );
 
   BigButtonWidget.simple({
@@ -125,6 +131,7 @@ class BigButtonWidget extends BaseButtonWidget {
          disabledBackgroundColor: Colors.transparent,
          strokeColor: Colors.transparent,
          textColor: theme.palette.text,
+         radius: 10.r,
        );
 
   static Story get story => Story(
@@ -165,6 +172,121 @@ class BigButtonWidget extends BaseButtonWidget {
           );
         case _:
           return BigButtonWidget.simple(
+            theme: theme,
+            onTap: active ? onTap : null,
+            text: text,
+          );
+      }
+    },
+  );
+}
+
+class SmallButtonWidget extends BaseButtonWidget {
+  const SmallButtonWidget({
+    super.key,
+    required super.theme,
+    required super.onTap,
+    required super.backgroundColor,
+    required super.strokeColor,
+    required super.textColor,
+    required super.text,
+    required super.disabledBackgroundColor,
+    required super.radius,
+  });
+
+  @override
+  // TODO: implement height
+  double get height => 50.h;
+
+  @override
+  // TODO: implement padding
+  EdgeInsets get padding => EdgeInsets.all(14.r);
+
+  @override
+  // TODO: implement textStyle
+  TextStyle get textStyle => theme.styles.nunitoMedium16;
+
+  @override
+  // TODO: implement width
+  double? get width => 178.w;
+
+  SmallButtonWidget.filled({
+    super.key,
+    required super.theme,
+    required super.onTap,
+    required super.text,
+  }) : super(
+         backgroundColor: theme.palette.block,
+         disabledBackgroundColor: theme.palette.buttonInactive,
+         strokeColor: Colors.transparent,
+         textColor: theme.palette.button,
+         radius: 5.r,
+       );
+
+  SmallButtonWidget.error({
+    super.key,
+    required super.theme,
+    required super.onTap,
+    required super.text,
+  }) : super(
+         backgroundColor: theme.palette.block,
+         disabledBackgroundColor: theme.palette.block,
+         strokeColor: Colors.transparent,
+         textColor: theme.palette.error,
+         radius: 5.r,
+       );
+
+  SmallButtonWidget.simple({
+    super.key,
+    required super.theme,
+    required super.onTap,
+    required super.text,
+  }) : super(
+         backgroundColor: theme.palette.block,
+         disabledBackgroundColor: Colors.transparent,
+         strokeColor: Colors.transparent,
+         textColor: theme.palette.button,
+         radius: 5.r,
+       );
+
+  static Story get story => Story(
+    name: 'SmallButtonWidget',
+    builder: (BuildContext context) {
+      var theme = CustomTheme.of(context);
+
+      void onTap() {
+        debugPrint('Button was pressed');
+      }
+
+      String text = context.knobs.text(label: 'Text', initial: 'Go to file');
+
+      int type = context.knobs.options(
+        label: 'type',
+        initial: 0,
+        options: [
+          Option(label: 'filled', value: 0),
+          Option(label: 'error', value: 1),
+          Option(label: 'simple', value: 2),
+        ],
+      );
+
+      bool active = context.knobs.boolean(label: 'Active', initial: true);
+
+      switch (type) {
+        case 0:
+          return SmallButtonWidget.filled(
+            theme: theme,
+            onTap: active ? onTap : null,
+            text: text,
+          );
+        case 1:
+          return SmallButtonWidget.error(
+            theme: theme,
+            onTap: active ? onTap : null,
+            text: text,
+          );
+        case _:
+          return SmallButtonWidget.simple(
             theme: theme,
             onTap: active ? onTap : null,
             text: text,

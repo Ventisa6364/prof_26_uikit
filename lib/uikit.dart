@@ -6,4 +6,4 @@ export 'src/presentation/theme/palette.dart';
 
 export 'src/presentation/widgets/testButton.dart';
 export 'src/presentation/widgets/utils.dart';
-export 'src/presentation/widgets/baseButtonWidget.dart';
+export 'src/presentation/widgets/buttonWidget.dart';

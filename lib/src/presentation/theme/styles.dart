@@ -11,10 +11,10 @@ class Styles {
 
   TextStyle get textSecondary => TextStyle(color: palette.textSecondary);
 
-  TextStyle get nunitoMedium18 => TextStyle(
+  TextStyle get nunitoMedium16 => TextStyle(
     fontWeight: FontWeight.w500,
-    fontSize: 18.sp,
-    height: 24 / 18,
+    fontSize: 16.sp,
+    height: 24 / 16,
     letterSpacing: 0,
   );
 }
